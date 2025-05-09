@@ -1,20 +1,18 @@
-'use client'
-import { useState } from 'react';
+'use client';
+import React, { useState } from 'react';
+import Number from './number';
 import Button from './button';
 
-const Add = ()  => {
-    const [number, setCount] = useState(0);
-    const numberIncrement = () => {
-        setCount(number + 1);
+const Add = () => {
+    const [count, setCount] = useState(0);
+    const handleIncrement = () => {
+        setCount(count + 1); 
     };
-
     return (
-        numberIncrement = (index, item) => (
-            <div key={index}>
-                <Button buttonValue={item} />
-                <Number numberValue={item} />
-            </div>
-        )
+        <div>
+            <Number numberVlaue={count} />
+            <Button onClick={handleIncrement} />
+        </div>
     );
 };
 

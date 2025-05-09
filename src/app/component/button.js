@@ -1,8 +1,11 @@
+'use client';
 import React from 'react';
 
-const Button = ({ buttonValue }) => {
+const Button = ({ onClick }) => {
     return (
-        <button onClick={numerIncrement}>Click</button>
+        <button onClick={onClick}>
+            Click Me
+        </button>
     );
 };
 

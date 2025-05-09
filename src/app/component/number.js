@@ -1,8 +1,9 @@
+'use client';
 import React from 'react';
 
-const Number = ({ numberValue }) => {
+const Number = ({ numberVlaue }) => {
     return (
-        <p>Number {number}</p>
+        <h1>Count: {numberVlaue}</h1>
     );
 };
 
